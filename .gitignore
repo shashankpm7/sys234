@@ -1,0 +1,11 @@
+# Ignore poetry lock file
+poetry.lock
+
+# Ignore pyproject.toml
+pyproject.toml
+
+# Ignore Replit configuration
+replit.nix
+
+# Ignore requirements.txt
+requirements.txt
