@@ -9,3 +9,5 @@ replit.nix
 
 # Ignore requirements.txt
 requirements.txt
+
+ignore/
