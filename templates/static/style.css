@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f2f6fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2a547e;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#search-bar {
+    width: 70%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: all 0.3s ease;
+}
+#search-bar:focus {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.9);
+}
+
+/* Movie Section */
+.movies-section, .recommended-section {
+    margin-top: 20px;
+}
+.movies-section h2, .recommended-section h2 {
+    font-size: 1.8em;
+    color: #2a547e;
+}
+
+/* Movie List */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Movie Card */
+.movie-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.9);
+}
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.movie-card h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
+.movie-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    color: #777;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #search-bar {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .movie-card h3 {
+        font-size: 1em;
+    }
+}
